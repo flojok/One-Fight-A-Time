@@ -1,0 +1,242 @@
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-5, .bgimg-7 {
+  position: relative;
+  /* opacity: 0.65; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* caption "one fight..." */
+.bgimg-1 {
+  background-image: url("https://www.kurzweilai.net/images/brain-network.png");
+  min-height: 100%;
+}
+/* the colorful image */
+.bgimg-2 {
+  background-image: url("https://www.verywellmind.com/thmb/hK6zpslR--cGpwrffuqnqSbWMPA=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/mentalhealth-5a56246fda271500371fe9c6.jpg");
+  min-height: 400px;
+}
+/* connection brain */
+.bgimg-3 {
+  background-image: url("https://www.deliciousliving.com/wp-content/uploads/drupal/uploads/2018/04/10/MentalHealth_595x335.jpg");
+  min-height: 400px;
+}
+/* peopleimage */
+/* .bgimg-5 {
+  background-image: url("https://www.verywellmind.com/thmb/hK6zpslR--cGpwrffuqnqSbWMPA=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/mentalhealth-5a56246fda271500371fe9c6.jpg");
+  min-height: 400px; */
+}
+/* blackimage */
+.bgimg-7{
+  background-image:url("https://www.daubeney.hackney.sch.uk/files/about-us/safeguarding/mental-health.jpg");
+  min-height:100px;
+  min-width: 50px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.caption span.border {
+  background-color: #006bb3;
+  color: #99ccff;
+  padding: 4px;
+  font-size: 25px;
+  letter-spacing: 9px;
+}
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimig-5, .bgimg-6 {
+    background-attachment: scroll;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #DCD55A;
+}
+.active{
+  background-color: #111;
+}
+/*This code for album collage*/
+* {
+  box-sizing: border-box;
+}
+#video{
+  position:relative;
+  left:7px;
+  right:180px;
+}
+.hero-image {
+  /*sizing*/
+  width: 100%;
+  height: 85vh;
+  /*Flex box stuff*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Text Styles*/
+  text-align: left;
+  /*Background styles*/
+  background-image: url("main_screen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+.hero-image h1{
+  font-family: 'Share Tech Mono', monospace;
+  color: #BB7590;
+  font-size: 38px;
+  border: 7px solid white; /* CHANGE THIS LINE */
+  border-radius: 20px;
+}
+#text{
+  font-size: 12px
+}
+    /* Fonts That Can Be Used
+font-family: 'Comfortaa', cursive;
+font-family: 'Lacquer', sans-serif;
+font-family: 'Zilla Slab', serif;
+font-family: 'Share Tech Mono', monospace;
+      */
+body {
+  margin: 0;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 0px;
+  /* border: 5px solid #99ccff; /* CHANGE THIS LINE */ */
+  /* border-radius: 20px; */
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 33.33%;
+  padding: 0 0px;
+  /* border: 5px solid #99ccff; /* CHANGE THIS LINE */ */
+  /* border-radius: 20px; */
+}
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*Image text*/
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1100px;
+  /* border-radius: 5px; */
+}
+.flip-card-inner {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  backface-visibility: hidden;
+}
+/* .flip-card-front {
+  background-color: #bbb;
+  color: black;
+} */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

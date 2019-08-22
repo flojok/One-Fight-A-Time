@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  body{
+
+  	background: #99ccff;
+
+    }
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="Anxiety&P.html">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HTML_Books_and_Music.html">Books/Music</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Health</h2>
+      <p></p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="Anxiety&P.html">Anxiety and panic attacks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="BipolarD.html">Bipolar disorder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="BPD.html">Borderline personality disorder (BPD)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Depression.html">Depression</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D&D.html">Dissociation and dissociative disorders</a>
+           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="OCD.html">Obsessive-compulsive disorder (OCD)</a>
+           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PTSD.html">Post-traumatic stress disorder (PTSD)</a>
+           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Schizophrenia.html">Schizophrenia</a>
+           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Bulimia.html">Bulimia nervosa</a>
+           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Anorexia.html">Anorexia nervosa</a>
+
+           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="BED.html">Binge eating disorder</a>
+              </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+
+      <h2>Anxiety and panic attacks</h2>
+       <img src="data:image/jpeg;base64,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">
+      <h5>A panic attack is an intense wave of fear characterized by its unexpectedness and debilitating, immobilizing intensity. Your heart pounds, you can’t breathe, and you may feel like you’re dying or going crazy. Panic attacks often strike out of the blue, without any warning, and sometimes with no clear trigger. They may even occur when you’re relaxed or asleep.</h5>
+
+      <p>Learn about panic and anxiety. Simply knowing more about panic can go a long way towards relieving your distress. Read up on anxiety, panic disorder, and the fight-or-flight response experienced during a panic attack. You’ll learn that the sensations and feelings you have when you panic are normal and that you aren’t going crazy.</p>
+      <p></p>
+      <br>
+      <h2></h2>
+      <h5></h5>
+      <p>Avoiding caffeine, nicotine, alcohol, and recreational drugs may help relieve fear and anxiety. Getting regular sleep and exercise, and practicing relaxation techniques such as deep breathing and yoga may also help.</p>
+      <p>Make an appointment to see a doctor if you
+1. Have symptoms that are becoming worse or more frequent
+2. Are struggling to work, maintain relationships, or complete daily tasks
+See a doctor immediately if you
+1. Are experiencing symptoms for the first time
+2. Have suicidal thoughts.</p>
+ <p>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
